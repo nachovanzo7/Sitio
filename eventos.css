@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('nachito.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme alrededor de los botones */
+    align-items: center;
+    width: 100vw; /* Asegura que el contenedor ocupe todo el ancho de la ventana */
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    position: relative;
+}
+
+.circular-button {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.circular-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.text {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    opacity: 0;
+}
+
+/* Ajusta el contenedor para centrar y espaciado simétrico */
+.container {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme alrededor de los botones */
+    align-items: center;
+    width: 100vw; /* Asegura que el contenedor ocupe todo el ancho de la ventana */
+}
+
+.fullscreen-image {
+    display: none; /* Oculta el contenedor por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image img {
+    max-width: 90%;
+    max-height: 90%;
+}

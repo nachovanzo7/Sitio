@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="eventos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circular-button" id="button-left">
+            <video autoplay muted loop class="background-video">
+                <source src="Vídeo2.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="text" id="text-left">13 de septiembre - Festi Pochoneta 😈</div>
+        </div>
+
+        <div class="circular-button" id="button-right">
+            <video autoplay muted loop class="background-video">
+                <source src="enojado.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="text" id="text-right">14 de septiembre - Pizzas y Juegos de Mesa</div>
+        </div>
+    </div>
+
+    <!-- Contenedor de la imagen en pantalla completa -->
+    <div id="fullscreen-image" class="fullscreen-image">
+        <img id="fullscreen-img" src="" alt="Imagen a pantalla completa">
+    </div>
+
+    <!-- Elemento de audio oculto -->
+    <audio id="click-sound" src="click.mp3"></audio>
+
+    <script src="eventos.js"></script>
+</body>
+</html>
